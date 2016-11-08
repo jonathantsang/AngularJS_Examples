@@ -6,21 +6,12 @@
   </head>
   <body>
  
-    <!-- Adds a controller that the Angular module will control.
-    The view is the div element and all that it contains. The $scope
-    component is used to provide data to the view. -->
     <div ng-controller="ctrl1">
       <span>Values:</span>
  
-      <!-- Define 2 elements that will be bound to the first and
-      second values in the scope using the ng-model directive. If
-      either value changes here it will change in the scope and
-      vice versa -->
       <input type="text" ng-model="first" />
       <input type="text" ng-model="second" />
  
-      <!-- Bind a click on this button to the function updateValue
-      using ng-click -->
       <br>
     <div>
       <button ng-click="addValue()">+</button>
@@ -30,15 +21,11 @@
     </div>
       <br><br>
  
-      <!-- Displays the Scope value of calculation in the expression-->
-
       <p>Result:</p>
       {{calculation}}
  
-      <!-- Expressions bind data to HTML as well -->
       <p>Your first value is {{first}}</p>
- 
-      <!-- You can do the same with ng-bind -->
+
       <p>Your second value is
         <span data-ng-bind="second"></span>
       </p>
