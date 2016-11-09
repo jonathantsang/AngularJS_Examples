@@ -1,31 +1,34 @@
 
 var app1 = angular.module('app1', []);
  
-app1.controller('ctrl1', function($scope) {
+app1.controller('ctrl1', function() {
 
-  $scope.first = 1;
-  $scope.second = 1;
-  $scope.log =[];
+  var vm = this;
 
-  $scope.addValue = function() {
-    $scope.calculation = $scope.first + ' + ' + $scope.second +
-      " = " + (+$scope.first + +$scope.second);
-    $scope.log.push($scope.calculation);
+  vm.first = 1;
+  vm.second = 1;
+  vm.log =[];
+
+  vm.addValue = function() {
+    var vm = this;
+    vm.calculation = vm.first + ' + ' + vm.second +
+      " = " + (+vm.first + +vm.second);
+    vm.log.push(vm.calculation);
   };
-  $scope.subtractValue = function() {
-    $scope.calculation = $scope.first + ' - ' + $scope.second +
-      " = " + (+$scope.first - +$scope.second);
-    $scope.log.push($scope.calculation);
+  vm.subtractValue = function() {
+    vm.calculation = vm.first + ' - ' + vm.second +
+      " = " + (+vm.first - +vm.second);
+    vm.log.push(vm.calculation);
   };
-  $scope.multiplyValue = function(){
-    $scope.calculation = $scope.first + ' * ' + $scope.second + 
-      " = " + (+$scope.first * +$scope.second);
-    $scope.log.push($scope.calculation);
+  vm.multiplyValue = function(){
+    vm.calculation = vm.first + ' * ' + vm.second + 
+      " = " + (+vm.first * +vm.second);
+    vm.log.push(vm.calculation);
   };
-  $scope.divideValue = function(){
-    $scope.calculation = $scope.first + ' / ' + $scope.second + 
-      " = " + (+$scope.first / +$scope.second);
-    $scope.log.push($scope.calculation);
+  vm.divideValue = function(){
+    vm.calculation = vm.first + ' / ' + vm.second + 
+      " = " + (+vm.first / +vm.second);
+    vm.log.push(vm.calculation);
   };
 
 });

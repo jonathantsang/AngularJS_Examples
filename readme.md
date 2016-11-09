@@ -6,3 +6,5 @@
 http://adrianmejia.com/blog/2014/09/28/angularjs-tutorial-for-beginners-with-nodejs-expressjs-and-mongodb/
 
 https://www.youtube.com/watch?v=OPxeCiy0RdY
+
+https://github.com/mschwarzmueller/angular-2-beta-boilerplate
