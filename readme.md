@@ -8,6 +8,7 @@ http://adrianmejia.com/blog/2014/09/28/angularjs-tutorial-for-beginners-with-nod
 Derek Banas Angular Video Tutorials:
 https://www.youtube.com/watch?v=OPxeCiy0RdY
 https://www.youtube.com/watch?v=gu6TfGZXUZs
+https://www.youtube.com/watch?v=BTVSIYeiCss
 
 https://devcenter.heroku.com/articles/mean-apps-restful-api
 (NEED a verified Heroku Account)
